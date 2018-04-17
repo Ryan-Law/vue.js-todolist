@@ -6,5 +6,6 @@ export default {
 	},
 	save:function(items) {
 		window.sessionStorage.setItem(STORAGE_KEY, JSON.stringify(items))
-	}
+        console.log(STORAGE_KEY)
+    }
 }
