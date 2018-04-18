@@ -2,7 +2,7 @@
     <div id="todolist">
         <h1 v-text="title"></h1>
         <el-row>
-            <el-col :span="8">
+            <el-col :xs="8">
                 <el-input v-model="newItem" placeholder="Enter new item" @keyup.enter.native="addItem"></el-input>
                 <ul>
                     <li v-for="item in items" @click="toggleFinish(item)">
@@ -59,9 +59,11 @@
         list-style: none;
         margin: 10px 0;
         line-height: 38px;
+        border-radius: 5px;
+        transition: all .5s;
     }
     li:hover{
-        background-color: #eee;
+        background-color: #efefef;
     }
     .el-icon-success{
         float: left;
